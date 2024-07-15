@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 4 Fresadora CNC: Usinagem de madeira | Blog Fabricação Digital</title>
+  <meta name="description" content="<p>This is a minimal example of using the bookdown package to write a book.
+The HTML output format for this example is bookdown::gitbook,
+set in the _output.yml file.</p>" />
+  <meta name="generator" content="bookdown 0.40 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 4 Fresadora CNC: Usinagem de madeira | Blog Fabricação Digital" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="<p>This is a minimal example of using the bookdown package to write a book.
+The HTML output format for this example is bookdown::gitbook,
+set in the _output.yml file.</p>" />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 4 Fresadora CNC: Usinagem de madeira | Blog Fabricação Digital" />
+  
+  <meta name="twitter:description" content="<p>This is a minimal example of using the bookdown package to write a book.
+The HTML output format for this example is bookdown::gitbook,
+set in the _output.yml file.</p>" />
+  
+
+<meta name="author" content="Leilane de Jesus dos Anjos" />
+
+
+<meta name="date" content="2024-07-13" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="conhecendo-uma-impressora-3d.html"/>
+<link rel="next" href="placas-de-circuito-impresso.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Book Example</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introdução</a></li>
+<li class="chapter" data-level="2" data-path="conhecendo-a-máquina-de-corte-a-laser.html"><a href="conhecendo-a-máquina-de-corte-a-laser.html"><i class="fa fa-check"></i><b>2</b> Conhecendo a Máquina de Corte a Laser</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="conhecendo-a-máquina-de-corte-a-laser.html"><a href="conhecendo-a-máquina-de-corte-a-laser.html#teoria"><i class="fa fa-check"></i><b>2.1</b> Teoria</a></li>
+<li class="chapter" data-level="2.2" data-path="conhecendo-a-máquina-de-corte-a-laser.html"><a href="conhecendo-a-máquina-de-corte-a-laser.html#prática"><i class="fa fa-check"></i><b>2.2</b> Prática</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="conhecendo-uma-impressora-3d.html"><a href="conhecendo-uma-impressora-3d.html"><i class="fa fa-check"></i><b>3</b> Conhecendo uma impressora 3D</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="conhecendo-uma-impressora-3d.html"><a href="conhecendo-uma-impressora-3d.html#teoria-1"><i class="fa fa-check"></i><b>3.1</b> Teoria</a></li>
+<li class="chapter" data-level="3.2" data-path="conhecendo-uma-impressora-3d.html"><a href="conhecendo-uma-impressora-3d.html#prática-1"><i class="fa fa-check"></i><b>3.2</b> Prática</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="fresadora-cnc-usinagem-de-madeira.html"><a href="fresadora-cnc-usinagem-de-madeira.html"><i class="fa fa-check"></i><b>4</b> Fresadora CNC: Usinagem de madeira</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="fresadora-cnc-usinagem-de-madeira.html"><a href="fresadora-cnc-usinagem-de-madeira.html#teoria-2"><i class="fa fa-check"></i><b>4.1</b> Teoria</a></li>
+<li class="chapter" data-level="4.2" data-path="fresadora-cnc-usinagem-de-madeira.html"><a href="fresadora-cnc-usinagem-de-madeira.html#prática-2"><i class="fa fa-check"></i><b>4.2</b> Prática</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="placas-de-circuito-impresso.html"><a href="placas-de-circuito-impresso.html"><i class="fa fa-check"></i><b>5</b> Placas de Circuito Impresso</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="placas-de-circuito-impresso.html"><a href="placas-de-circuito-impresso.html#teórica"><i class="fa fa-check"></i><b>5.1</b> Teórica</a></li>
+<li class="chapter" data-level="5.2" data-path="placas-de-circuito-impresso.html"><a href="placas-de-circuito-impresso.html#prática-3"><i class="fa fa-check"></i><b>5.2</b> Prática</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="soldagem.html"><a href="soldagem.html"><i class="fa fa-check"></i><b>6</b> Soldagem</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="soldagem.html"><a href="soldagem.html#teoria-3"><i class="fa fa-check"></i><b>6.1</b> Teoria</a></li>
+<li class="chapter" data-level="6.2" data-path="soldagem.html"><a href="soldagem.html#prática-4"><i class="fa fa-check"></i><b>6.2</b> Prática</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="plotter-de-corte.html"><a href="plotter-de-corte.html"><i class="fa fa-check"></i><b>7</b> Plotter de corte</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="plotter-de-corte.html"><a href="plotter-de-corte.html#teórica-1"><i class="fa fa-check"></i><b>7.1</b> Teórica</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="ide-arduíno-e-conexão-com-python.html"><a href="ide-arduíno-e-conexão-com-python.html"><i class="fa fa-check"></i><b>8</b> IDE Arduíno e conexão com Python</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="ide-arduíno-e-conexão-com-python.html"><a href="ide-arduíno-e-conexão-com-python.html#explorando-as-linguagens"><i class="fa fa-check"></i><b>8.1</b> Explorando as linguagens</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="projeto-final-pêndulo-invertido.html"><a href="projeto-final-pêndulo-invertido.html"><i class="fa fa-check"></i><b>9</b> Projeto final: Pêndulo Invertido</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="projeto-final-pêndulo-invertido.html"><a href="projeto-final-pêndulo-invertido.html#fabricação"><i class="fa fa-check"></i><b>9.1</b> Fabricação</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Blog Fabricação Digital</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="fresadora-cnc-usinagem-de-madeira" class="section level1 hasAnchor" number="4">
+<h1><span class="header-section-number">Chapter 4</span> Fresadora CNC: Usinagem de madeira<a href="fresadora-cnc-usinagem-de-madeira.html#fresadora-cnc-usinagem-de-madeira" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="teoria-2" class="section level2 hasAnchor" number="4.1">
+<h2><span class="header-section-number">4.1</span> Teoria<a href="fresadora-cnc-usinagem-de-madeira.html#teoria-2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><img src="Ima_fresa.jpeg" style="display:block; margin:0 auto;;width:30.0%" height="300" /></p>
+<p>A fresadora CNC para usinagem de madeira é uma ferramenta elétrica utilizada para cortar, moldar, esculpir e perfurar madeira a partir de uma fresa rotativa controlada por computador.No dia 19 de Abril de 2024, o discente Natãn Barbosa membro efetivo do FABLAB apresentou a fresa criada no laboratório a mesma possui três graus de liberdade, logo ela se movimenta nos eixos x, y e z.</p>
+<img src="fresa_natan.jpeg" style="display:block; margin:0 auto;;width:60.0%" height="300" />
+<center>
+Figura 9: Apresentação da Fresa.
+</center>
+<p>O seu processo de fabricação inicia-se pela criação do projeto em algum software de desenho que então é convertido em um arquivo <strong>.gcode</strong>, caracterizado como um conjunto de comandos que a fresadora utilizará para mover a ferramenta de corte. Estando a parte computacional configurada, parte-se para a fixação do material na mesa de trabalho da fresadora e posteriormente para a seleção da fresa adequada e ajuste da profundiddade e velocidade de corte. Realizado todos os ajustes é então efetuado a fabricação do projeto onde a fresa rotativa será movida ao logo da superfície de madeira, removendo material conforme o necessário para se obter a peça desejada.</p>
+<p>A fresadora CNC é caracterizada como uma máquia utilizado em processos de manufatura sbtrativa, uma vez que, temos um processo onde o material é removida de uma bloco maior para se criar uma peça desejada.</p>
+</div>
+<div id="prática-2" class="section level2 hasAnchor" number="4.2">
+<h2><span class="header-section-number">4.2</span> Prática<a href="fresadora-cnc-usinagem-de-madeira.html#prática-2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Para se ter um conhecimento prático prévio do funcionamento da fresadora, foi realizado a gravação de uma peça em formato de quadrado na máquina o que nos resultou na imagem apresentada na Figura(10)</p>
+<img src="gravacao.jpeg" style="display:block; margin:0 auto;;width:30.0%" height="300" />
+<center>
+Figura 10: Gravação de um quadrado em uma peça de compensado.
+</center>
+<p>A partir desta experiência adquirida em laboratório foi possível compreender que operar uma fresa CNC de forma eficaz exige conhecimento técnico e bastante treinamento, além de que este tipo de equipamento requer manutenção regular de forma a garantir o funcionamento adequado e prolongar a vida útil da máquina.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="conhecendo-uma-impressora-3d.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="placas-de-circuito-impresso.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/03-parts.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf", "_main.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

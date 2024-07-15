@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 5 Placas de Circuito Impresso | Blog Fabricação Digital</title>
+  <meta name="description" content="<p>This is a minimal example of using the bookdown package to write a book.
+The HTML output format for this example is bookdown::gitbook,
+set in the _output.yml file.</p>" />
+  <meta name="generator" content="bookdown 0.40 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 5 Placas de Circuito Impresso | Blog Fabricação Digital" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="<p>This is a minimal example of using the bookdown package to write a book.
+The HTML output format for this example is bookdown::gitbook,
+set in the _output.yml file.</p>" />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 5 Placas de Circuito Impresso | Blog Fabricação Digital" />
+  
+  <meta name="twitter:description" content="<p>This is a minimal example of using the bookdown package to write a book.
+The HTML output format for this example is bookdown::gitbook,
+set in the _output.yml file.</p>" />
+  
+
+<meta name="author" content="Leilane de Jesus dos Anjos" />
+
+
+<meta name="date" content="2024-07-15" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="fresadora-cnc-usinagem-de-madeira.html"/>
+<link rel="next" href="soldagem.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Book Example</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introdução</a></li>
+<li class="chapter" data-level="2" data-path="conhecendo-a-máquina-de-corte-a-laser.html"><a href="conhecendo-a-máquina-de-corte-a-laser.html"><i class="fa fa-check"></i><b>2</b> Conhecendo a Máquina de Corte a Laser</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="conhecendo-a-máquina-de-corte-a-laser.html"><a href="conhecendo-a-máquina-de-corte-a-laser.html#teoria"><i class="fa fa-check"></i><b>2.1</b> Teoria</a></li>
+<li class="chapter" data-level="2.2" data-path="conhecendo-a-máquina-de-corte-a-laser.html"><a href="conhecendo-a-máquina-de-corte-a-laser.html#prática"><i class="fa fa-check"></i><b>2.2</b> Prática</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="conhecendo-uma-impressora-3d.html"><a href="conhecendo-uma-impressora-3d.html"><i class="fa fa-check"></i><b>3</b> Conhecendo uma impressora 3D</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="conhecendo-uma-impressora-3d.html"><a href="conhecendo-uma-impressora-3d.html#teoria-1"><i class="fa fa-check"></i><b>3.1</b> Teoria</a></li>
+<li class="chapter" data-level="3.2" data-path="conhecendo-uma-impressora-3d.html"><a href="conhecendo-uma-impressora-3d.html#prática-1"><i class="fa fa-check"></i><b>3.2</b> Prática</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="fresadora-cnc-usinagem-de-madeira.html"><a href="fresadora-cnc-usinagem-de-madeira.html"><i class="fa fa-check"></i><b>4</b> Fresadora CNC: Usinagem de madeira</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="fresadora-cnc-usinagem-de-madeira.html"><a href="fresadora-cnc-usinagem-de-madeira.html#teoria-2"><i class="fa fa-check"></i><b>4.1</b> Teoria</a></li>
+<li class="chapter" data-level="4.2" data-path="fresadora-cnc-usinagem-de-madeira.html"><a href="fresadora-cnc-usinagem-de-madeira.html#prática-2"><i class="fa fa-check"></i><b>4.2</b> Prática</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="placas-de-circuito-impresso.html"><a href="placas-de-circuito-impresso.html"><i class="fa fa-check"></i><b>5</b> Placas de Circuito Impresso</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="placas-de-circuito-impresso.html"><a href="placas-de-circuito-impresso.html#teorica"><i class="fa fa-check"></i><b>5.1</b> Teorica</a></li>
+<li class="chapter" data-level="5.2" data-path="placas-de-circuito-impresso.html"><a href="placas-de-circuito-impresso.html#prática-3"><i class="fa fa-check"></i><b>5.2</b> Prática</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="soldagem.html"><a href="soldagem.html"><i class="fa fa-check"></i><b>6</b> Soldagem</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="soldagem.html"><a href="soldagem.html#teoria-3"><i class="fa fa-check"></i><b>6.1</b> Teoria</a></li>
+<li class="chapter" data-level="6.2" data-path="soldagem.html"><a href="soldagem.html#prática-4"><i class="fa fa-check"></i><b>6.2</b> Prática</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="plotter-de-corte.html"><a href="plotter-de-corte.html"><i class="fa fa-check"></i><b>7</b> Plotter de corte</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="plotter-de-corte.html"><a href="plotter-de-corte.html#teorica-1"><i class="fa fa-check"></i><b>7.1</b> Teorica</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="ide-arduíno-e-conexão-com-python.html"><a href="ide-arduíno-e-conexão-com-python.html"><i class="fa fa-check"></i><b>8</b> IDE Arduíno e conexão com Python</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="ide-arduíno-e-conexão-com-python.html"><a href="ide-arduíno-e-conexão-com-python.html#explorando-as-linguagens"><i class="fa fa-check"></i><b>8.1</b> Explorando as linguagens</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="projeto-final-pêndulo-invertido.html"><a href="projeto-final-pêndulo-invertido.html"><i class="fa fa-check"></i><b>9</b> Projeto final: Pêndulo Invertido</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="projeto-final-pêndulo-invertido.html"><a href="projeto-final-pêndulo-invertido.html#fabricação"><i class="fa fa-check"></i><b>9.1</b> Fabricação</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Blog Fabricação Digital</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="placas-de-circuito-impresso" class="section level1 hasAnchor" number="5">
+<h1><span class="header-section-number">Chapter 5</span> Placas de Circuito Impresso<a href="placas-de-circuito-impresso.html#placas-de-circuito-impresso" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="teorica" class="section level2 hasAnchor" number="5.1">
+<h2><span class="header-section-number">5.1</span> Teorica<a href="placas-de-circuito-impresso.html#teorica" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>As placas de circuito impresso (PCI) ou do inglês <em>Printed Circuit Board</em> (PCB) são plataformas eficientes e organizadas para conectar componentes eletrônicos de forma segura e confiável. Esteja você trabalhando em qualquer projeto que envolva circuitaria em algum momento para se ter um projeto final bom e sem risco de falhas por solta de componente do seu circuito elétrônico, em uma dada etapa do seu projeto será necessário trabalhar com as famosas PCI que são componentes essenciais na eletrônica moderna.</p>
+<p>Dito isto, no dia 08 de maio de 2024, a discente Jéssica Sousa membro efetiva do FABLAB nos forneceu uma aula sobre as PCI que partiam desde sua criação em um sotware até a fabricação da placa. Segundo Jéssica a fabricação de uma PCI no laboratório atualmente pode ser feita de duas maneiras, após o design no prgrama <strong>EasyEAD</strong>, podendo ser através de uma fresa para circuito impresso ou por meio de corrosão que utiliza o produto químico <em>Percloreto de Ferro (<span class="math inline">\(FeCl_3\)</span>)</em>.</p>
+<img src="apre_jessi.jpeg" style="display:block; margin:0 auto;;width:70.0%" height="300" />
+<center>
+Figura 11: Apresentação do programa <strong>EasyEAD</strong>.
+</center>
+</div>
+<div id="prática-3" class="section level2 hasAnchor" number="5.2">
+<h2><span class="header-section-number">5.2</span> Prática<a href="placas-de-circuito-impresso.html#prática-3" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>A primeira etapa no processo de fabricação de uma PCI parte da criação do design do circuito em um software, que no caso foi o <strong>EasyEAD</strong>, onde se tem a liberdade de criação de circuitos detalhados como posicionamentos dos componentes e ajustes das trilhas podendo ser feitas de forma manual ou não. O design final é carregado para ser utilizado na etapa de mascaramento, que se baseia em cobrir com uma camada de adesivo a placa de fenolite, essa dita máscara será utilizar para traçar as áreas que serão corroidas e as que serão mantidas intactas. Esta etapa de mascaramento é feita com o auxílio do corte a laser utilizando baixa potência.</p>
+<p>Ao passar pelo processo de mascaramento e após retirar o adesivo apenas da área que se deseja reaizar a corrosão a placa é então mergulhada em uma solução de percloreto de ferro onde para cada 100g de água é colocado 50g de percloreto.</p>
+<p>Estando a placa de fenolite na solução o mesmo fica em imerssão realizando movimentos circulares até se observar a total corrosão do cobre que não será utilizado, a Figura (12), denota um dos momentos em que se observa o nível de corrosão passados 5 minutos.</p>
+<img src="corrosao_1.jpeg" style="display:block; margin:0 auto;;width:30.0%" height="200" />
+<center>
+Figura 12: Processo de corrosção da placa.
+</center>
+<p>O resultado final PCI desenvolvida é apresentada na Figura (13), onde é possível observar as trilhas do circuito que deveriam ser mantidas após o processo de corrosão.</p>
+<p><img src="placa_final.jpeg" style="display:block; margin:0 auto;;width:30.0%" height="200" /></p>
+<center>
+Figura 13: Resultado final do processo de corrosão.
+</center>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="fresadora-cnc-usinagem-de-madeira.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="soldagem.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/04-citations.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf", "_main.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

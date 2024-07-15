@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 8 IDE Arduíno e conexão com Python | Blog Fabricação Digital</title>
+  <meta name="description" content="<p>This is a minimal example of using the bookdown package to write a book.
+The HTML output format for this example is bookdown::gitbook,
+set in the _output.yml file.</p>" />
+  <meta name="generator" content="bookdown 0.40 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 8 IDE Arduíno e conexão com Python | Blog Fabricação Digital" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="<p>This is a minimal example of using the bookdown package to write a book.
+The HTML output format for this example is bookdown::gitbook,
+set in the _output.yml file.</p>" />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 8 IDE Arduíno e conexão com Python | Blog Fabricação Digital" />
+  
+  <meta name="twitter:description" content="<p>This is a minimal example of using the bookdown package to write a book.
+The HTML output format for this example is bookdown::gitbook,
+set in the _output.yml file.</p>" />
+  
+
+<meta name="author" content="Leilane de Jesus dos Anjos" />
+
+
+<meta name="date" content="2024-07-12" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="plotter-de-corte.html"/>
+<link rel="next" href="projeto-final-pêndulo-invertido.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Book Example</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introdução</a></li>
+<li class="chapter" data-level="2" data-path="conhecendo-a-máquina-de-corte-a-laser.html"><a href="conhecendo-a-máquina-de-corte-a-laser.html"><i class="fa fa-check"></i><b>2</b> Conhecendo a Máquina de Corte a Laser</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="conhecendo-a-máquina-de-corte-a-laser.html"><a href="conhecendo-a-máquina-de-corte-a-laser.html#teoria"><i class="fa fa-check"></i><b>2.1</b> Teoria</a></li>
+<li class="chapter" data-level="2.2" data-path="conhecendo-a-máquina-de-corte-a-laser.html"><a href="conhecendo-a-máquina-de-corte-a-laser.html#prática"><i class="fa fa-check"></i><b>2.2</b> Prática</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="conhecendo-uma-impressora-3d.html"><a href="conhecendo-uma-impressora-3d.html"><i class="fa fa-check"></i><b>3</b> Conhecendo uma impressora 3D</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="conhecendo-uma-impressora-3d.html"><a href="conhecendo-uma-impressora-3d.html#teoria-1"><i class="fa fa-check"></i><b>3.1</b> Teoria</a></li>
+<li class="chapter" data-level="3.2" data-path="conhecendo-uma-impressora-3d.html"><a href="conhecendo-uma-impressora-3d.html#prática-1"><i class="fa fa-check"></i><b>3.2</b> Prática</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="fresadora-cnc-usinagem-de-madeira.html"><a href="fresadora-cnc-usinagem-de-madeira.html"><i class="fa fa-check"></i><b>4</b> Fresadora CNC: Usinagem de madeira</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="fresadora-cnc-usinagem-de-madeira.html"><a href="fresadora-cnc-usinagem-de-madeira.html#teoria-2"><i class="fa fa-check"></i><b>4.1</b> Teoria</a></li>
+<li class="chapter" data-level="4.2" data-path="fresadora-cnc-usinagem-de-madeira.html"><a href="fresadora-cnc-usinagem-de-madeira.html#prática-2"><i class="fa fa-check"></i><b>4.2</b> Prática</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="placas-de-circuito-impresso.html"><a href="placas-de-circuito-impresso.html"><i class="fa fa-check"></i><b>5</b> Placas de Circuito Impresso</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="placas-de-circuito-impresso.html"><a href="placas-de-circuito-impresso.html#teórica"><i class="fa fa-check"></i><b>5.1</b> Teórica</a></li>
+<li class="chapter" data-level="5.2" data-path="placas-de-circuito-impresso.html"><a href="placas-de-circuito-impresso.html#prática-3"><i class="fa fa-check"></i><b>5.2</b> Prática</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="soldagem.html"><a href="soldagem.html"><i class="fa fa-check"></i><b>6</b> Soldagem</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="soldagem.html"><a href="soldagem.html#teoria-3"><i class="fa fa-check"></i><b>6.1</b> Teoria</a></li>
+<li class="chapter" data-level="6.2" data-path="soldagem.html"><a href="soldagem.html#prática-4"><i class="fa fa-check"></i><b>6.2</b> Prática</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="plotter-de-corte.html"><a href="plotter-de-corte.html"><i class="fa fa-check"></i><b>7</b> Plotter de corte</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="plotter-de-corte.html"><a href="plotter-de-corte.html#teórica-1"><i class="fa fa-check"></i><b>7.1</b> Teórica</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="ide-arduíno-e-conexão-com-python.html"><a href="ide-arduíno-e-conexão-com-python.html"><i class="fa fa-check"></i><b>8</b> IDE Arduíno e conexão com Python</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="ide-arduíno-e-conexão-com-python.html"><a href="ide-arduíno-e-conexão-com-python.html#explorando-as-linguagens"><i class="fa fa-check"></i><b>8.1</b> Explorando as linguagens</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="projeto-final-pêndulo-invertido.html"><a href="projeto-final-pêndulo-invertido.html"><i class="fa fa-check"></i><b>9</b> Projeto final: Pêndulo Invertido</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Blog Fabricação Digital</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="ide-arduíno-e-conexão-com-python" class="section level1 hasAnchor" number="8">
+<h1><span class="header-section-number">Chapter 8</span> IDE Arduíno e conexão com Python<a href="ide-arduíno-e-conexão-com-python.html#ide-arduíno-e-conexão-com-python" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="explorando-as-linguagens" class="section level2 hasAnchor" number="8.1">
+<h2><span class="header-section-number">8.1</span> Explorando as linguagens<a href="ide-arduíno-e-conexão-com-python.html#explorando-as-linguagens" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Ao se trabalhar em projetos principalmente do ramo de tecnologia em algum momento iremos nos deparar com alguma etapa que envolva hadware e sotware, como por exemplo testes de sensores, controle de atuadores e interação com dispositivos para isto dentre diversas ferramentas que se pode utilizar, uma de fácil acesso para a maioria das pessoas se faz por meio da utilização do Arduíno.</p>
+<p>O Arduíno é uma plataforma de prototipagem eletrônica, ou seja, ela é uma plataforma que possibilita o desenvolvimento de projetos eletrônicos. O mesmo é constituido por hardware e software denominado de <strong>Arduíno IDE</strong> que permite codificar e posteriormente gravar no microcontrolador do Arduíno.</p>
+<p>Ao acessar o software <strong>Arduíno IDE</strong>, é possível observar como ficará a divisão do código que será escrito, o mesmo é dividido em três partes:</p>
+<ul>
+<li>A primeira é utilizada para definir as variáveis e pinos que serão utilizados ao longo do código;</li>
+<li>A segunda denominada como <strong>void setup(){}</strong> é utilizada para realizar a configuração dos pinos, taxa de envio de informações dentre outras funções que dispõe esta etapa;</li>
+<li>Já a terceira é onde os comandos que queremos que sejam executados ocorram, ele é chamado de <strong>void loop(){}</strong></li>
+</ul>
+<p>Ao realizar uma comunicação entre o Arduíno e o python, fazemos com que o arduíno seja utilizado para aplicar comando e ler os dados enquando que o <em>Python</em> pode ser utilizado para visualizar e processar as informações advindas do arduíno assim como enviar comandos.</p>
+<p>De forma a apresentar estes conceitos de maneira mais detalhada e mostrando um caso real eu e Jeimisson Leão, ambos membros do laboratório de inteligência, controle e eletrônica (LINCE) demonstramos o funcionamento de uma bancada denominada motor-gerador, como mostra a Figura(), que é comumente utilizada em aulas de laboratório de controle, de formar a apontar a estruturas de código tanto para o arduíno como para o python e como ocorre o processo de envio e recebimento de informações para ambos os casos. Assim como demonstrar que a codificação depende do projeto que se estar trabalhando e do que se deseja obter como resultado final.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="plotter-de-corte.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="projeto-final-pêndulo-invertido.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/07-references.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf", "_main.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

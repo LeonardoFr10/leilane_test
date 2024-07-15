@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 9 Projeto final: Pêndulo Invertido | Blog Fabricação Digital</title>
+  <meta name="description" content="<p>This is a minimal example of using the bookdown package to write a book.
+The HTML output format for this example is bookdown::gitbook,
+set in the _output.yml file.</p>" />
+  <meta name="generator" content="bookdown 0.40 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 9 Projeto final: Pêndulo Invertido | Blog Fabricação Digital" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="<p>This is a minimal example of using the bookdown package to write a book.
+The HTML output format for this example is bookdown::gitbook,
+set in the _output.yml file.</p>" />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 9 Projeto final: Pêndulo Invertido | Blog Fabricação Digital" />
+  
+  <meta name="twitter:description" content="<p>This is a minimal example of using the bookdown package to write a book.
+The HTML output format for this example is bookdown::gitbook,
+set in the _output.yml file.</p>" />
+  
+
+<meta name="author" content="Leilane de Jesus dos Anjos" />
+
+
+<meta name="date" content="2024-07-15" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="ide-arduíno-e-conexão-com-python.html"/>
+
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Book Example</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introdução</a></li>
+<li class="chapter" data-level="2" data-path="conhecendo-a-máquina-de-corte-a-laser.html"><a href="conhecendo-a-máquina-de-corte-a-laser.html"><i class="fa fa-check"></i><b>2</b> Conhecendo a Máquina de Corte a Laser</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="conhecendo-a-máquina-de-corte-a-laser.html"><a href="conhecendo-a-máquina-de-corte-a-laser.html#teoria"><i class="fa fa-check"></i><b>2.1</b> Teoria</a></li>
+<li class="chapter" data-level="2.2" data-path="conhecendo-a-máquina-de-corte-a-laser.html"><a href="conhecendo-a-máquina-de-corte-a-laser.html#prática"><i class="fa fa-check"></i><b>2.2</b> Prática</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="conhecendo-uma-impressora-3d.html"><a href="conhecendo-uma-impressora-3d.html"><i class="fa fa-check"></i><b>3</b> Conhecendo uma impressora 3D</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="conhecendo-uma-impressora-3d.html"><a href="conhecendo-uma-impressora-3d.html#teoria-1"><i class="fa fa-check"></i><b>3.1</b> Teoria</a></li>
+<li class="chapter" data-level="3.2" data-path="conhecendo-uma-impressora-3d.html"><a href="conhecendo-uma-impressora-3d.html#prática-1"><i class="fa fa-check"></i><b>3.2</b> Prática</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="fresadora-cnc-usinagem-de-madeira.html"><a href="fresadora-cnc-usinagem-de-madeira.html"><i class="fa fa-check"></i><b>4</b> Fresadora CNC: Usinagem de madeira</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="fresadora-cnc-usinagem-de-madeira.html"><a href="fresadora-cnc-usinagem-de-madeira.html#teoria-2"><i class="fa fa-check"></i><b>4.1</b> Teoria</a></li>
+<li class="chapter" data-level="4.2" data-path="fresadora-cnc-usinagem-de-madeira.html"><a href="fresadora-cnc-usinagem-de-madeira.html#prática-2"><i class="fa fa-check"></i><b>4.2</b> Prática</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="placas-de-circuito-impresso.html"><a href="placas-de-circuito-impresso.html"><i class="fa fa-check"></i><b>5</b> Placas de Circuito Impresso</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="placas-de-circuito-impresso.html"><a href="placas-de-circuito-impresso.html#teórica"><i class="fa fa-check"></i><b>5.1</b> Teórica</a></li>
+<li class="chapter" data-level="5.2" data-path="placas-de-circuito-impresso.html"><a href="placas-de-circuito-impresso.html#prática-3"><i class="fa fa-check"></i><b>5.2</b> Prática</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="soldagem.html"><a href="soldagem.html"><i class="fa fa-check"></i><b>6</b> Soldagem</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="soldagem.html"><a href="soldagem.html#teoria-3"><i class="fa fa-check"></i><b>6.1</b> Teoria</a></li>
+<li class="chapter" data-level="6.2" data-path="soldagem.html"><a href="soldagem.html#prática-4"><i class="fa fa-check"></i><b>6.2</b> Prática</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="plotter-de-corte.html"><a href="plotter-de-corte.html"><i class="fa fa-check"></i><b>7</b> Plotter de corte</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="plotter-de-corte.html"><a href="plotter-de-corte.html#teórica-1"><i class="fa fa-check"></i><b>7.1</b> Teórica</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="ide-arduíno-e-conexão-com-python.html"><a href="ide-arduíno-e-conexão-com-python.html"><i class="fa fa-check"></i><b>8</b> IDE Arduíno e conexão com Python</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="ide-arduíno-e-conexão-com-python.html"><a href="ide-arduíno-e-conexão-com-python.html#explorando-as-linguagens"><i class="fa fa-check"></i><b>8.1</b> Explorando as linguagens</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="projeto-final-pêndulo-invertido.html"><a href="projeto-final-pêndulo-invertido.html"><i class="fa fa-check"></i><b>9</b> Projeto final: Pêndulo Invertido</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="projeto-final-pêndulo-invertido.html"><a href="projeto-final-pêndulo-invertido.html#fabricação"><i class="fa fa-check"></i><b>9.1</b> Fabricação</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Blog Fabricação Digital</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="projeto-final-pêndulo-invertido" class="section level1 hasAnchor" number="9">
+<h1><span class="header-section-number">Chapter 9</span> Projeto final: Pêndulo Invertido<a href="projeto-final-pêndulo-invertido.html#projeto-final-pêndulo-invertido" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="fabricação" class="section level2 hasAnchor" number="9.1">
+<h2><span class="header-section-number">9.1</span> Fabricação<a href="projeto-final-pêndulo-invertido.html#fabricação" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>O pêndulo invertido trata-se de um sistema mecânico constituido por uma haste com uma massa acoplada em uma de suas extremidades que oscila sobre uma estrutura móvel que se movimenta horizontalmete com o auxilio de um motor DC. Este sistema possui dois graus de liberdade que se dá pelo ângulo e o plano vertical e a posição do carro em relação ao eixo horizontal. O objetivo do sistema é manter a haste em um ponto de equlibrio vertical superior tendo 180º através do controle de posição do carro.</p>
+<p>Para a realização do projeto utilizou-se uma trilha de impressora HP, encoder linear que estar acoplado ao carro de impressão, uma haste, um potênciometro multivoltas, um Arduíno, uma ponte H e uma base para apoiar o sistema.</p>
+<img src="porj_final_componentes.jpeg" style="display:block; margin:0 auto;;width:60.0%" height="300" />
+<center>
+Figura 15: Componentes do projeto.
+</center>
+A fabricação da haste se deu através da impressão 3D, enquanto que a base para sustentar o sistema foi realizado na fresadora de usinagem de madeira, como é mostrado nas Figuras (16) e (17). Deste modo, até esta etapa do processo foi-se trabalhado tanto com manufatura adtiva como subtrativa.
+<img src="ima_haste.jpeg" style="display:block; margin:0 auto;;width:60.0%" height="300" />
+<center>
+Figura 16: Haste fabricada na impressora 3D.
+</center>
+<img src="base_usinagem.jpeg" style="display:block; margin:0 auto;;width:60.0%" height="300" />
+<center>
+Figura 17: Inicio do processo de usinagem da base do sistema.
+</center>
+<p>Com o objetivo de manter os componentes eletrônicos unidos em um único compartimento, optou-se pela criação de uma caixa responsável por guardar todo o hadware que é necessário para enviar e receber informações do sistema. O compartimento foi fabricado no Laser e o resultado final é mostrado na Figura (18).</p>
+<img src="ima_caixa_g.jpeg" style="display:block; margin:0 auto;;width:40.0%" height="300" />
+<center>
+Figura 18: Compartimento para o armazenamentos dos hardware.
+</center>
+Após realizar a montagem de toda a parte estrutural a versão final do prjeto do pêndulo invertido é mostrado na Figura (19).
+<img src="ima_final.jpeg" style="display:block; margin:0 auto;;width:70.0%" height="300" />
+<center>
+Figura 19: Estrutura Final.
+</center>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="ide-arduíno-e-conexão-com-python.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/projetofinal.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf", "_main.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
